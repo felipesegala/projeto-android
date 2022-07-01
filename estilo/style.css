@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@font-face{
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf');
+    font-weight: normal;
+}
+/*PALETA DE CORES e FONTE*/
+
+:root{
+    --cor0: #9da0e4;
+    --cor1: #1821E6;
+    --cor2: #0C02C2;
+    --cor3: #282475;
+    --cor4: #070175;
+
+    --font-padrao: Arial, helvetica, sans-serif;
+    --font-destaque:'Archivo Black', cursive;
+    --font-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+}
+
+header{
+    padding-top: 40px;
+    min-height: 100px;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1), var(--cor2));
+}
+
+header > h1{
+    font-family: var(--font-destaque);
+    color: white;
+}
+
+header > p{
+    color: white;
+}
+
+nav{
+    background-color: var(--cor0);
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+nav > a{
+    color: white;
+    text-decoration:none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav > a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+article > h1{
+    font-family: var(--font-android);
+    color: #282475;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+article > h2{
+    font-family: var(--font-android);
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0), transparent); 
+}
+
+article > p{
+    text-indent: 30px;
+}
